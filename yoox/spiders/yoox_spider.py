@@ -36,5 +36,7 @@ class YooxSpider(Spider):
         loader.add_xpath("brand", '//*[@id="itemTitle"]/h1/a/text()')
         loader.add_xpath("price", '//*[@id="item-price"]/span/span[1]/text()')
         loader.add_xpath("image", '//*[@id="openZoom"]/img/@src')
+        loader.add_value("url", response.url)
+        loader.add_xpath("code", '//*[@id="itemInfoCod10"]/text()')
 
         return loader.load_item()

@@ -13,7 +13,7 @@ class YooxPipeline:
         self.csv = csv.DictWriter(
             self.file,
             delimiter=",",
-            fieldnames=["brand", "name", "price", "image"],
+            fieldnames=["brand", "name", "price", "image", "url", "code"],
         )
         self.csv.writeheader()
 

@@ -7,3 +7,5 @@ class YooxItem(scrapy.Item):
     name = scrapy.Field(output_processor=TakeFirst())
     price = scrapy.Field(output_processor=TakeFirst())
     image = scrapy.Field(output_processor=TakeFirst())
+    url = scrapy.Field(output_processor=TakeFirst())
+    code = scrapy.Field(output_processor=TakeFirst())
