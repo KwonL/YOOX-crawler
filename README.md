@@ -1,5 +1,5 @@
 # YOOX crawler
-명품 편집샵 YOOX의 crawler
+This repository is simple [YOOX](https://www.yoox.com/) crawler based on scrapy
 
 ## Installation
 ```bash
