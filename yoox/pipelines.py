@@ -1,5 +1,4 @@
 import csv
-import locale
 import os
 
 from itemadapter import ItemAdapter
@@ -26,7 +25,7 @@ class YooxPipeline:
             adapter["brand"] = self.clean_text(adapter.get("brand"))
             adapter["name"] = self.clean_text(adapter.get("name"))
             adapter["price"] = int(
-                locale.atof(adapter.get("price").split()[1])
+                float(adapter.get("price").replace(",", "").split()[1])
             )
             adapter["image"] = adapter.get("image").split("?")[0]
         except Exception:
