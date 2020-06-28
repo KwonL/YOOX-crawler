@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  yoox:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: yoox-crawler
+    volumes:
+      - ./results:/root/results
